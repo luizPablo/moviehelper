@@ -92,7 +92,7 @@ const Home: FC<any> = ({ navigation }) => {
                     <Icon name={'search'} size={18} color={'#fff'} />
                 </TouchableOpacity>
             </SearchBar>
-            <Title>Popular Movies</Title>
+            <Title>{activeSearch ? 'Search result' : 'Popular Movies'}</Title>
             {!activeSearch && show_list}
             {activeSearch && search_result}
         </Container>
